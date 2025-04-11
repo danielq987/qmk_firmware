@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // arrow key games (e.g. touhou)
   [2] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_UP,    KC_O,   KC_P,  KC_BSPC,
+       KC_TAB,    KC_Q,    KC_W,    KC_SPC,    KC_SPC,    KC_T,                         KC_Y,    KC_U,    KC_UP,    KC_O,   KC_P,  KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_LEFT,    KC_DOWN,    KC_RIGHT, KC_SCLN, KC_ENT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
@@ -77,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_GRV, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_DEL,
       //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL, XXXXXXX, KC_MINS, KC_PLUS, KC_EQL, KC_BSLS,                      KC_MINS,  KC_UNDS, KC_LBRC, KC_RBRC, KC_QUOT,  KC_ENT,
+      KC_LCTL, KC_LT, KC_GT, KC_PLUS, KC_EQL, KC_BSLS,                      KC_MINS,  KC_UNDS, KC_LBRC, KC_RBRC, KC_QUOT,  KC_ENT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PSCR,                      KC_VOLD, KC_VOLU, KC_LCBR, KC_RCBR, KC_PIPE, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -89,9 +89,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
         QK_BOOT, KC_F1, KC_F2, KC_F3, KC_F4, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, KC_F5, KC_F6, KC_F7, KC_F8, XXXXXXX,                      XXXXXXX, TO(0), TO(1), TO(2), XXXXXXX, XXXXXXX,
+      KC_LCTL, KC_F5, KC_F6, KC_F7, KC_F8, XXXXXXX,                      XXXXXXX, TO(0), TO(1), TO(2), TO(3), XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, KC_F9, KC_F10, KC_F11, KC_F12, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX,XXXXXXX,XXXXXXX, XXXXXXX,
+      XXXXXXX, KC_F9, KC_F10, KC_F11, KC_F12, XXXXXXX,                      UG_TOGG, UG_NEXT, UG_HUEU,UG_SATU,UG_VALU, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_RALT
                                           //`--------------------------'  `--------------------------'
